@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+.grid--list--element {
+	float: left;
+	width: 100%;
+	padding: 10px;
+	background-color: #eee;
+	color: #000;
+	border: 0.5px solid #000;
+}
+
+
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid--list--button {
+	display: inline-block;
+	width: 100%;
+}
+
+.button {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	width: 33.33%;
+	min-height: 25px;
+	float: left;
+}
+
+.button:hover {
+	background-color: #ddd;
+}
+
+.button.active {
+	background-color: #666;
+	color: white;
+}
